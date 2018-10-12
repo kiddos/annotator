@@ -1,0 +1,25 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: darkslateblue;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: 0 0 6px #FFF;
+  cursor: pointer;
+}
+
+.navbar .title {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}

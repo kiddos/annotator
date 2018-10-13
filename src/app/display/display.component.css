@@ -1,0 +1,13 @@
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#display {
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 10px #666;
+}

@@ -1,0 +1,15 @@
+.loader input[type="file"] {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.loader input[type="file"] + label {
+  font-size: 1.25em;
+  padding: 5px;
+  box-shadow: 0 0 5px #666;
+  display: flex;
+  align-items: center;
+  width: 200px;
+}

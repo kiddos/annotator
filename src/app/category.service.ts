@@ -6,11 +6,16 @@ import { Injectable } from '@angular/core';
 export class CategoryService {
   constructor() {
     this.categories = [];
+    this.selected = '';
   }
 
   addCategory(name: string) {
     if (this.categories.indexOf(name.toLowerCase()) < 0) {
       this.categories.push(name.toLowerCase());
+
+      if (!this.selected) {
+        this.selected = name.toLowerCase();
+      }
     }
   }
 
@@ -21,5 +26,10 @@ export class CategoryService {
     }
   }
 
+  selectCategory(name: string) {
+    this.selected = name;
+  }
+
   categories: Array<string>;
+  selected: string;
 }

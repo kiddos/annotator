@@ -28,3 +28,30 @@
 .category-list td {
   text-align: center;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+ background-color: darkslateblue;
+ font-size: 1.2em;
+ color: white;
+}
+
+thead th {
+  padding: 5px;
+  border: 1px solid silver;
+}
+
+tbody td {
+  border: 1px solid silver;
+}
+
+table tr.highlight {
+  background-color: #F2F2F2;
+}
+
+table tr {
+  cursor: pointer;
+}

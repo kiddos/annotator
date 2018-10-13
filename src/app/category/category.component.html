@@ -18,7 +18,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let cat of categories">
+          <tr *ngFor="let cat of categories"
+              class="{{ cat == selected ? 'highlight' : '' }}"
+              (click)="selectCategory(cat)">
             <td>{{ cat }}</td>
             <td>
               <button class="button" (click)="deleteCategory(cat)">

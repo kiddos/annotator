@@ -19,6 +19,10 @@ export class CategoryComponent implements OnInit {
     return this.categoryService.categories;
   }
 
+  get selected() {
+    return this.categoryService.selected;
+  }
+
   addCategory(name: string) {
     if (this.inputCategoryName !== '') {
       this.categoryService.addCategory(this.inputCategoryName);
@@ -27,6 +31,10 @@ export class CategoryComponent implements OnInit {
 
   deleteCategory(name: string) {
     this.categoryService.deleteCategory(name);
+  }
+
+  selectCategory(name: string) {
+    this.categoryService.selectCategory(name);
   }
 
   inputCategoryName: string;

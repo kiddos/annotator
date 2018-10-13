@@ -1,0 +1,30 @@
+.category {
+  margin-top: 20px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.group > input {
+  font-size: 1.1em;
+}
+
+.group > button {
+  margin-left: 10px;
+}
+
+.category-list {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.category-list table {
+  width: 100%;
+}
+
+.category-list td {
+  text-align: center;
+}

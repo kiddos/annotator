@@ -1,0 +1,33 @@
+<fieldset class="category">
+  <legend>Category</legend>
+
+  <div>
+    <div class="group">
+      <input placeholder="category name" [(ngModel)]="inputCategoryName">
+      <button class="button">
+        <img src="assets/icons/add.svg" alt="" (click)="addCategory()">
+      </button>
+    </div>
+
+    <div class="category-list" *ngIf="categories.length > 0">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cat of categories">
+            <td>{{ cat }}</td>
+            <td>
+              <button class="button" (click)="deleteCategory(cat)">
+                <img src="assets/icons/delete.svg" alt="">
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</fieldset>

@@ -5,7 +5,6 @@
   width: 100%;
   padding: 20px;
   background-color: darkslateblue;
-  color: #FFF;
   display: flex;
   align-items: center;
 }
@@ -16,10 +15,13 @@
   border: none;
   box-shadow: 0 0 6px #FFF;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .title {
   display: inline-block;
   margin-left: 10px;
   font-size: 20px;
+  color: #FFF;
 }

@@ -1,7 +1,9 @@
 <div class="navbar">
-  <button class="menu">
+  <button class="menu" (click)="show()">
     <img src="assets/icons/menu.svg" alt="">
   </button>
 
   <div class="title">{{ title }}</div>
+
+  <panel [(show)]="showPanel"></panel>
 </div>

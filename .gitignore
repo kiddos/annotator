@@ -40,3 +40,6 @@ Thumbs.db
 
 # ignore configuration file
 annotator.config.json
+
+# ignore label files
+*.label.json

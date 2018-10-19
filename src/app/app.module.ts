@@ -8,6 +8,7 @@ import { PanelComponent } from './panel/panel.component';
 import { LoaderComponent } from './loader/loader.component';
 import { DisplayComponent } from './display/display.component';
 import { CategoryComponent } from './category/category.component';
+import { SaverComponent } from './saver/saver.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryComponent } from './category/category.component';
     PanelComponent,
     LoaderComponent,
     DisplayComponent,
-    CategoryComponent
+    CategoryComponent,
+    SaverComponent
   ],
   imports: [
     BrowserModule,

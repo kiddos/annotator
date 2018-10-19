@@ -3,7 +3,7 @@ const url = require('url');
 const path = require('path');
 
 require('electron-reload')(__dirname, {
-  ignored: /node_modules|[\/\\]\.|annotator.config.json/
+  ignored: /node_modules|[\/\\]\.|annotator.config.json|.*\.label\.json/
 });
 
 let win;

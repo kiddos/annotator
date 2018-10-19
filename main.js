@@ -1,8 +1,10 @@
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require('electron');
 const url = require('url');
 const path = require('path');
 
-require('electron-reload')(__dirname);
+require('electron-reload')(__dirname, {
+  ignored: /node_modules|[\/\\]\.|annotator.config.json/
+});
 
 let win;
 
